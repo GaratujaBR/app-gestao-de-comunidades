@@ -1,0 +1,79 @@
+Gestão Comunitária
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-%F0%9F%9F%A2%20active-success)
+![Deploy](https://img.shields.io/badge/🚀%20Live%20Demo-vercel-black)
+Sistema fullstack de gestão comunitária desenvolvido para administração de comunidades intencionais e ecovilas. Oferece módulos integrados de enquetes, eventos, reservas, controle financeiro e gestão de perfis, tudo em uma única plataforma moderna e responsiva.
+O projeto nasceu da necessidade real de centralizar a operação de comunidades que antes dependiam de planilhas dispersas e comunicação fragmentada. A arquitetura foi pensada para ser modular, permitindo que cada comunidade ative apenas os módulos que precisa.
+---
+🚀 Tecnologias Utilizadas
+Frontend: React 18, TypeScript, Vite, Tailwind CSS, shadcn/ui
+Backend: Python (FastAPI), Node.js
+Banco de Dados: PostgreSQL (com Row Level Security)
+Infra: Docker, Docker Compose, Vercel
+Ferramentas: Husky (pre-commit), Prettier, ESLint, GitHub Actions
+---
+📦 Como Instalar e Rodar
+Pré-requisitos
+Docker e Docker Compose
+Node.js 18+ (para desenvolvimento local do frontend)
+Python 3.10+ (para desenvolvimento local do backend)
+Usando Docker (recomendado)
+```bash
+# Clone o repositório
+git clone https://github.com/GaratujaBR/gestao-comunitaria.git
+cd gestao-comunitaria
+
+# Suba todos os serviços
+docker-compose up --build
+
+# Acesse o frontend em http://localhost:5173
+# Acesse o backend em http://localhost:8000
+```
+Desenvolvimento Local (Frontend)
+```bash
+cd gestao-frontend
+npm install
+npm run dev
+```
+Desenvolvimento Local (Backend)
+```bash
+cd gestao-backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python main.py
+```
+---
+🖥️ Demonstração
+🔗 Acesse a aplicação: gestao-comunitaria-three.vercel.app
+> 📸 *Adicione aqui screenshots dos principais módulos: dashboard, enquetes, calendário de eventos e gestão financeira.*
+---
+✨ Funcionalidades Principais
+📊 Dashboard Comunitário — Visão geral com indicadores e atividades recentes
+🗳️ Módulo de Enquetes — Criação, votação e resultados em tempo real
+📅 Gestão de Eventos — Calendário comunitário com inscrições e organização
+🏠 Reservas de Espaços — Controle de uso de áreas comuns da comunidade
+💰 Módulo Financeiro — Acompanhamento de receitas, despesas e relatórios
+👥 Perfis de Moradores — Cadastro com permissões baseadas em papéis
+📋 Tudoteca (Wiki) — Base de conhecimento colaborativa da comunidade
+---
+📌 Status do Projeto
+🟢 Ativo em desenvolvimento — em uso por comunidades reais, com melhorias contínuas.
+---
+🤝 Como Contribuir
+Faça um fork do projeto
+Crie uma branch (`git checkout -b feature/nova-feature`)
+Commit suas mudanças (`git commit -m 'feat: adiciona nova funcionalidade'`)
+Push para a branch (`git push origin feature/nova-feature`)
+Abra um Pull Request
+---
+📝 Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+---
+👥 Contribuidores
+Gabriel RN (@GaratujaBR)
+Claude Code
+Devin 
+---
+📄 Veja também: CHANGELOG_SESSION.md · CLAUDE.md
